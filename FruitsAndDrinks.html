@@ -1,0 +1,74 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>FruitsAndDrinks</title>
+<style>
+.img1{
+	position:absolute;
+	top:50px;
+	width:200px;
+	height:200px;
+}
+.img2{
+	position:absolute;
+	top:300px;
+	width:200px;
+	height:200px;
+}
+#btn1{
+	position:absolute;
+	top:0px;
+	left:0px;
+	width:50px;
+	height:30px;
+	background-color:#F00;
+}
+#background {
+	position:absolute;
+    width:1600px;
+    height:1200px;
+	opacity:0.8;
+    z-index:-1000;
+	 
+}
+
+</style>
+<script type="text/javascript">
+function goback(){
+	history.back();
+}
+</script>
+
+</head>
+
+<body>
+<img id="background"  src="images/cc.jpeg"/>
+ 
+<button id="btn1" onclick="goback();" value="back"><b>back</b>
+</button>
+
+<div>
+<table>
+<tbody>
+<tr>
+<td>
+<img class="img1" src="images/fd1.jpeg">
+<img class="img1" src="images/fd2.jpeg">
+<img class="img1" src="images/fd3.jpeg">
+<img class="img1" src="images/fd4.jpg">
+</td>
+</tr>
+<tr>
+<td>
+<img class="img2" src="images/fd5.jpeg">
+<img class="img2" src="images/fd6.jpeg">
+<img class="img2" src="images/fd7.jpg">
+</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</body>
+</html>

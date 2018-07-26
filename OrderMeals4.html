@@ -1,0 +1,374 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Order Meals</title>
+<script type="text/javascript" src="plugins/jquery-1.8.3.js">
+</script>
+<script type="text/javascript">
+$(document).ready(function(){
+$("#div999").hide(); 
+
+$("#btn999").mouseenter(function(){
+$("#div999").show(500);
+});
+$("#div999").mouseleave(function(){
+$("#div999").hide(500);
+});
+});
+</script>
+<script type="text/javascript">
+function sum1()
+{
+	var price=document.getElementById("price").value;
+	var num1=parseInt(document.getElementById("number1").value);
+	document.getElementById("price").value=parseInt(300*num1);
+	price=document.getElementById("price").value;
+	return price;
+}
+function sum2()
+{
+	var old1=sum1();
+	var price=document.getElementById("price").value;
+	var num2=parseInt(document.getElementById("number2").value);
+	document.getElementById("price").value=parseInt(80*num2)+parseInt(old1);
+	price=document.getElementById("price").value;
+	return price;
+	}
+function sum3()
+{
+	
+	var old2=sum2();
+	var price=document.getElementById("price").value;
+	var num3=parseInt(document.getElementById("number3").value);
+	document.getElementById("price").value=parseInt(70*num3)+parseInt(old2);
+	price=document.getElementById("price").value;
+	return price;
+	}
+function sum4()
+{
+	
+	var old3=sum3();
+	var price=document.getElementById("price").value;
+	var num4=parseInt(document.getElementById("number4").value);
+	document.getElementById("price").value=parseInt(70*num4)+parseInt(old3);
+	price=document.getElementById("price").value;
+	return price;
+	}
+</script>
+<style>
+body
+{
+	background-color: #FF6;
+	}
+#div999
+{
+	position:relative;
+	display:none;
+	z-index:500;
+	}
+#gallery{
+	position:relative;
+	top:20px;
+	background-color:#FF3;
+	z-index:1;
+}
+#divmenu
+{
+	position:absolute;
+	left:50px;
+	top:0px;
+	
+	 
+}
+#btn1{
+	position:absolute;
+	right:0px;
+	top:2000px;
+	width:50px;
+	height:30px;
+	background-color:#FF0;
+	color:#9F0;
+	
+}
+#h1
+{
+	text-align:center;
+	font-family:'Comic Sans MS', cursive;
+	color:#FFF;
+	font-size:40px;
+	}
+
+#div2
+{
+	width:1040px;
+	height:1800px;
+	position:absolute;
+	left:180px;
+	top:100px;
+	background-color:#FFF;	
+	
+	}
+#b1
+{
+	position:absolute;
+	left:80px;
+	top:50px;
+	height:400px;
+	width:800px;
+	background-color:#FFF;
+	
+	}
+#img1
+{
+	position:absolute;
+	left:10px;
+	top:10px;
+	height:380px;
+	width:380px;
+	}
+
+#b2
+{
+	position:absolute;
+	left:80px;
+	top:480px;
+	height:400px;
+	width:800px;
+	background-color:#FFF;
+	
+	}
+#img2
+{
+	position:absolute;
+	left:10px;
+	top:10px;
+	height:380px;
+	width:380px;
+	}
+#b3
+{
+	position:absolute;
+	left:80px;
+	top:900px;
+	height:400px;
+	width:800px;
+	background-color:#FFF;
+	
+	}
+#img3
+{
+	position:absolute;
+	left:10px;
+	top:10px;
+	height:380px;
+	width:380px;
+	}
+#b4
+{
+	position:absolute;
+	left:80px;
+	top:1310px;
+	height:400px;
+	width:800px;
+	background-color:#FFF;
+	
+	}
+#img4
+{
+	position:absolute;
+	left:10px;
+	top:10px;
+	height:380px;
+	width:380px;
+	}
+
+</style>
+<script type="text/javascript">
+function goback(){
+	history.back();
+}
+</script>
+</head>
+
+<body>
+
+<div id="divmenu">
+
+<a href="SeasonColorRestaurant.html">
+<img src="images/logo.jpg" style="width:100px;height:100px;top:0px; position:absolute;"/></a>
+
+
+<a href="SeasonColorRestaurant.html">
+<button id="btn111" style="position:absolute;top:120px;left:0px;width:100px;height:50px; background-color:#F00;color: #FF0; border-color: #F00; font-size:12px;font-family:Georgia, 'Times New Roman', Times, serif;" >Season Color</button></a>
+
+<a href="ChineseFood.html">ChineseFood</a>
+
+
+
+<a href="NewDish.html">
+<button style="position:absolute;top:170px;left:0px;width:100px;height:50px; background-color:#F00;color: #FF0; border-color:#F00; font-size:12px;font-family:Georgia, 'Times New Roman', Times, serif;" >New products</button></a>
+
+<a href="FruitsAndDrinks.html">
+<button style="position:absolute;top:220px;left:0px;width:100px;height:50px; background-color:#F00;color: #FF0; border-color:#F00; font-size:12px;font-family:Georgia, 'Times New Roman', Times, serif;" >FruitAndDrink</button></a>
+
+<a href="ChineseFood.html">
+<button style="position:absolute;top:270px;left:0px;width:100px;height:50px; background-color:#F00;color: #FF0; border-color:#F00; font-size:12px;font-family:Georgia, 'Times New Roman', Times, serif;" >Chinese Food</button></a>
+
+<a href="India food.html">
+<button style="position:absolute;top:320px;left:0px;width:100px;height:50px; background-color:#F00;color: #FF0; border-color:#F00; font-size:12px;font-family:Georgia, 'Times New Roman', Times, serif;" >India Food</button></a>
+
+
+<a href="Sweet.html">
+<button style="position:absolute;top:370px;left:0px;width:100px;height:50px; background-color:#F00;color: #FF0; border-color:#F00; font-size:12px;font-family:Georgia, 'Times New Roman', Times, serif;" >Sweet</button></a>
+
+<a href="Restaurant.html">
+<button style="position:absolute;top:420px;left:0px;width:100px;height:50px; background-color:#F00;color: #FF0; border-color:#F00; font-size:12px;font-family:Georgia, 'Times New Roman', Times, serif;" >Restaurant</button></a>
+
+<a href="PriceCheck.html">
+<button style="position:absolute;top:470px;left:0px;width:100px;height:50px; background-color:#F00;color: #FF0; border-color:#F00; font-size:12px;font-family:Georgia, 'Times New Roman', Times, serif;" >Price Check</button></a>
+
+<a href="OrderMeals.html">
+<button id="btn999" style="position:absolute;top:520px;left:0px;width:100px;height:50px; background-color:#F00;color: #FF0; border-color:#F00; font-size:12px;font-family:Georgia, 'Times New Roman', Times, serif;" >Order Meals</button></a>
+
+<div id="div999"  style=" width:200px; height:130px; padding-top: 0px; border:4px solid orange; background-color: #F00; position: absolute;top:520px;left:100px;">
+<table>
+<tr>
+<td><a href="OrderMeals4.html"><span style="color:#FF0;">Chinese Food</span></a></td>
+</tr>
+<tr>
+<td><a href="OrderMeals2.html"><span style="color:#FF0;">India Food</span></a></td>
+</tr>
+<tr>
+<td><a href="OrderMeals.html"><span style="color:#FF0;">Fruits And Drinks</span></a></td>
+</tr>
+<tr>
+<td><a href="OrderMeals3.html"><span style="color:#FF0;">Sweet</span></a></td>
+</tr>
+<tr>
+<td><a href="OrderMeals5.html"><span style="color:#FF0;">New Dishes</span></a></td>
+</tr>
+
+</table>
+</div>
+<a href="SeasonColorRestaurant.html">
+<button style="position:absolute;top:570px;left:0px;width:100px;height:50px; background-color:#F00;color: #FF0; border-color:#F00; font-size:12px;font-family:Georgia, 'Times New Roman', Times, serif;" >Contact Us</button></a>
+
+</div>
+
+
+<div id="div1">
+<h1 id="h1">Welcome to order meals</h1>
+
+<div id="div2">
+<table id="table1">
+<tbody>
+<tr>
+<td>
+<button id="b1">
+<img id="img1" src="images/PriceCheck/Zongzi1.jpg"/>
+<p style="color:#000; position:absolute;top:30px;left:400px; font-family:'Comic Sans MS', cursive;
+	 font-size:24px"><b>ZongZi</b></p><br/>
+<img  src="images/1.jpg" style="position:absolute;top:120px;left:400px;">
+<p style=" font-size:24px;color:#F00;position:absolute;top:100px;left:440px;font-family:'Comic Sans MS', cursive;
+	">300</p>
+<br/>
+<p style=" font-size:24px;color: #000;position:absolute;top:180px;left:400px;font-family:'Comic Sans MS', cursive;
+	 "><b>Number</b></p>
+      <input id="number1" type="number" name="quantity" min="0" max="100" spry:default="0"  style=" position:absolute;top:200px;left:550px; width:200px;height:40px;">
+<button  style="font-size:24px;	color: #FFF; position:absolute;top:350px;left:480px;
+background-color:#FF0;font-family:'Comic Sans MS', cursive;
+	" onclick="sum1()"><b>Add To Order</b></button>
+</button>
+</td>
+</tr>
+<tr>
+<td>
+<button id="b2">
+<img id="img2"  src="images/PriceCheck/noddles1.jpg"/>
+<p style="color:#000; position:absolute;top:30px;left:400px; font-family:'Comic Sans MS', cursive;
+	 font-size:24px"><b>Noodles</b></p><br/>
+<img  src="images/1.jpg" style="position:absolute;top:120px;left:400px;">
+<p style=" font-size:24px;color:#F00;position:absolute;top:100px;left:440px;font-family:'Comic Sans MS', cursive;
+	">80</p>
+<br/>
+<p style=" font-size:24px;color: #000;position:absolute;top:180px;left:400px;font-family:'Comic Sans MS', cursive;
+	"><b>Number</b></p>
+     <input id="number2" type="number" name="quantity" min="0" max="100" spry:default="0"  style=" position:absolute;top:200px;left:550px; width:200px;height:40px;">
+<button  style="
+	font-size:24px;	
+	color: #FFF; 
+	position:absolute;
+	top:800px;
+	left:480px;
+	background-color:#FF0;font-family:'Comic Sans MS', cursive;
+	 " onclick="sum2()"><b>Add To Order</b></button>
+</button>
+</td>
+</tr>
+<tr>
+<td>
+<button id="b3">
+<img id="img3"src="images/PriceCheck/tangyuan1.jpg"/>
+<p style="color:#000; position:absolute;top:30px;left:400px; font-family:'Comic Sans MS', cursive;
+	 font-size:24px"><b>glue pudding</b></p><br/>
+<img  src="images/1.jpg" style="position:absolute;top:120px;left:400px;">
+<p style=" font-size:24px;color:#F00;position:absolute;top:100px;left:440px;font-family:'Comic Sans MS', cursive;
+	">70</p>
+<br/>
+<p style=" font-size:24px;color: #000;position:absolute;top:180px;left:400px;font-family:'Comic Sans MS', cursive;
+	 "><b>Number</b></p>
+      <input id="number3" type="number" name="quantity" min="0" max="100" spry:default="0"  style=" position:absolute;top:200px;left:550px; width:200px;height:40px;">
+<button  style="
+	font-size:24px;	
+	color: #FFF; 
+	position:absolute;
+	top:1200px;
+	left:480px;
+	background-color:#FF0;font-family:'Comic Sans MS', cursive;
+	" onclick="sum3()"><b>Add To Order</b></button>
+</button>
+</td>
+</tr>
+<tr>
+<td>
+<button id="b4">
+<img id="img4"src="images/PriceCheck/Dumping1.jpg"/>
+<p style="color:#000; position:absolute;top:30px;left:400px; font-family:'Comic Sans MS', cursive;
+	 font-size:24px"><b>Dumplings</b></p><br/>
+<img  src="images/1.jpg" style="position:absolute;top:120px;left:400px;">
+<p style=" font-size:24px;color:#F00;position:absolute;top:100px;left:440px;font-family:'Comic Sans MS', cursive;
+	">70</p>
+<br/>
+<p style=" font-size:24px;color: #000;position:absolute;top:180px;left:400px;font-family:'Comic Sans MS', cursive;
+	 "><b>Number</b></p>
+      <input id="number4" type="number" name="quantity" min="0" max="100" spry:default="0"  style=" position:absolute;top:200px;left:550px; width:200px;height:40px;">
+<button  style="
+	font-size:24px;	
+	color: #FFF; 
+	position:absolute;
+	top:1600px;
+	left:480px;
+	background-color:#FF0;font-family:'Comic Sans MS', cursive;
+	" onclick="sum4()"><b>Add To Order</b></button>
+</button>
+</td>
+</tr>
+</tbody>
+</table>
+
+
+<button id="btn1" onclick="goback();" value="back"><b>back</b>
+</button>
+
+<div id="divfix"  style=" background-color:#F00; z-index:1000; position:fixed;top:350px;right:0px; height:200px;width:280px;">
+<span  
+style="font-size:24px;color:#FF0;font-family:'Comic Sans MS', cursive;">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Your Total Price:
+</span><br/><br/><br/>
+
+<input type="text" id="price" style="position:absolute;left:20px; font-size:24px; border-color: #F00; font-family:'Comic Sans MS', cursive; background-color:#F00; color:#FF0;"/>
+</div>
+</div>
+</body>
+</html>
